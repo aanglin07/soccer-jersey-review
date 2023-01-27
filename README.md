@@ -6,7 +6,7 @@ This is an online soccer jersey review app where users can review new and classi
 1.	User Inerface
 2.	Admin Interface
 
-1. Users registered for this application can
+Users registered for this application can
 *	Login/Sign Up to the application
 *	Browse jerseys from the online collection.
 *	Filter them based on soccer league, year, team and player.
@@ -15,7 +15,7 @@ This is an online soccer jersey review app where users can review new and classi
 *	Purchase them through an affiliate link
 *	Engage with other users through a comment section
 
-2. Admin of this application can
+Admin of this application can
 *	List/manage jerseys
 *	View list of users
 *	Moderate user interactions
