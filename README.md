@@ -1,10 +1,10 @@
 # soccer-jersey-review
 # YorkU Final Project
 
-* This is an online soccer jersey review app where users can review new and classic jerseys, like or dislike them and purchase them through affiliate links. This will have 2 interfaces.
+This is an online soccer jersey review app where users can review new and classic jerseys, like or dislike them and purchase them through affiliate links. This will have 2 interfaces.
 
-•	User Inerface
-•	Admin Interface
+*	User Inerface
+*	Admin Interface
 
 Users registered for this application can
 •	Login/Sign Up to the application
