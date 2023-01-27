@@ -21,3 +21,4 @@ Admin of this application can
 *	Moderate user interactions
 *	Block or remove users
 *	Manage affiliate links 
+Link to Figma design:
