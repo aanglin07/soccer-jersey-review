@@ -22,4 +22,4 @@ Admin of this application can
 *	Block or remove users
 *	Manage affiliate links 
 
-Link to Figma design:<https://www.figma.com/file/t1L7eQ4vEiV224hwnC8V79/Soccer-Jersey-Review?node-id=0%3A1&t=9tAyl4g5kgwxsfVc-1>
+Link to Figma design: <https://www.figma.com/file/t1L7eQ4vEiV224hwnC8V79/Soccer-Jersey-Review?node-id=0%3A1&t=9tAyl4g5kgwxsfVc-1>
