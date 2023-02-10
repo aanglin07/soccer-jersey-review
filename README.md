@@ -2,8 +2,8 @@
 # YorkU Final Project
 
 User Stories
-*As an administrator, I want to be able to upload soccer jerseys to be reviewed along with affiliate links that users can follow to purchase their desired jerseys. 
-*As a Jersey review app user, I want to be able to view and review various soccer jerseys and also be provided with a link to purchase a jersey if I so desire.
+* As an administrator, I want to be able to upload soccer jerseys to be reviewed along with affiliate links that users can follow to purchase their desired jerseys. 
+* As a Jersey review app user, I want to be able to view and review various soccer jerseys and also be provided with a link to purchase a jersey if I so desire.
 
 
 Project Description
