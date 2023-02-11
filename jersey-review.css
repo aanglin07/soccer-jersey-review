@@ -1,0 +1,405 @@
+/* Formats the header section*/
+#page-title{
+    font-weight: 600;
+    font-size: 64px;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+    margin-top: 0px;
+}
+#page-header{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top: 0px;
+    align-items: center;
+    padding: 0px;
+    
+}
+#wishcart{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 7%;
+    margin-top: 0px;
+    padding-bottom: 25px;
+ 
+}
+#wishlist-title{
+    font-weight: bold;
+}
+#header-format{
+    border-style: solid;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 80px;
+    border-color: #EAEBEB;
+    
+}
+
+/* Formats menu/navigation bar*/
+#menu{
+    padding-left: 5px; 
+    margin-bottom: 50px;
+    
+}
+#nav-bar-div{
+    width: 200px;
+    height: 800px;
+    border-style: solid;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-color: #EAEBEB;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+#nav-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    width: 60%;
+    margin-top: 0px;
+    padding-bottom: 25px;
+ 
+}
+li{
+    font-weight: bold;
+    font-size: 12pt;
+}
+.button1{
+    border: 1px solid red; 
+    color: black; 
+    background-color: white; 
+    border-radius: 4px; 
+}
+.button2{
+    color: white; 
+    background-color: red; 
+    border-radius: 4px; 
+    border: none;
+    height: 70%;
+    width: 50%;
+}
+#button-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-evenly;
+}
+
+/*Formats content and product area*/
+#content-area{
+    padding-left: 10px; 
+    padding-top: 10px; 
+    margin-left: 100px;
+}
+#jersey-collect-label-position{
+    display: flex;
+    flex-direction: row;
+}
+#jersey-collect-label-format{
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+#product-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#product-layout-positioning{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+#rating-labels{
+    display: flex;
+    flex-direction: row;
+}
+.ratings-format{
+    width:30px;
+    height:30px;
+}
+
+/*Formats footer section*/
+#footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    background-color: black;
+}
+
+.social-image-size{
+    width: 45px;
+    height: 45px;
+}
+
+/* Creates and formats hamburger menu*/
+.hamburger-menu{
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.hamburger-menu li a{
+    color: black;
+    padding: 2px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+    width: 15px;
+}
+.hamburger-menu li a:hover{
+    box-shadow: 0 -1px 0px black inset;
+    background-color: #EAEBEB;
+}
+#page-header input:checked ~ .hamburger-menu{
+    right: 0px;
+}
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    transition: 0.3s;    
+}
+.hamburger::before{
+    top: -10px;
+    width: 30px;
+}
+.hamburger::after{
+    top: -20px;
+    width: 30px;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+
+/*Activates page responsiveness*/
+
+@media screen and (max-width:1224px) {
+    .hamburger,
+    .toggle-menu{
+        display: block;
+}
+    #wishcart{
+        margin-right: 20px;
+    }
+    #nav-bar-div{
+        display: none;
+    }
+    #wishlist-title{
+        display: none;
+    }
+    #content-area{
+        margin-left: 0px;
+    }
+    #footer-section{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 10px;
+    }
+    .hamburger-menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:0px;
+        right: -300px;
+        margin-top: 100px;
+        display: block;
+        height: 100px;
+        
+    }
+    
+    #page-header{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        margin-top: 0px;
+        align-items: center;
+        padding: 0px;
+        
+    }
+       
+}
+@media screen and (max-width:730px) {
+    .hamburger,
+    .toggle-menu{
+        display: block;
+}
+    #wishcart{
+        margin-right: 40px;
+    }
+    #nav-bar-div{
+        display: none;
+    }
+    #wishlist-title{
+        display: none;
+    }
+    #content-area{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    #product-layout-positioning{
+        width: 650px;
+    }
+    #footer-section{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 10px;
+    }
+    #page-title{
+        margin-left: 10px;
+        font-size: 40px;
+        padding-right: 30px;
+    }
+    #wishcart{
+        padding-top: 20px;
+    }
+    
+}
+@media screen and (max-width:680px) {
+    .hamburger,
+    .toggle-menu{
+        display: block;
+}
+    #wishcart{
+        margin-right: 40px;
+    }
+    #nav-bar-div{
+        display: none;
+    }
+    #wishlist-title{
+        display: none;
+    }
+    #content-area{
+        width: 550px;
+    }
+    #product-layout-positioning{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #filter-positioning{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        width: 250px;
+    }
+    #footer-section{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 10px;
+    }
+    #page-title{
+        margin-left: 10px;
+        font-size: 30px;
+        padding-right: 30px;
+    }
+    #wishcart{
+        padding-top: 20px;
+    }
+
+}
+@media screen and (max-width:550px) {
+    .hamburger,
+    .toggle-menu{
+        display: block;
+}
+    #wishcart{
+        margin-right: 40px;
+    }
+    #nav-bar-div{
+        display: none;
+    }
+    #wishlist-title{
+        display: none;
+    }
+    #content-area{
+        width: 550px;
+    }
+    #product-layout-positioning{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        
+    }
+    #filter-positioning{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        width: 250px;
+    }
+    #footer-section{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 10px;
+    }
+    #page-title{
+        margin-left: 10px;
+        font-size: 25px;
+        padding-right: 35px;
+    }
+    #wishcart{
+        padding-top: 20px;
+    }
+    #jersey-collect-label-format{
+        font-size: 35px;
+    }
+
+}
