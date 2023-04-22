@@ -47,6 +47,9 @@ The relationships between these entities have been identified as follows:
 *	A User can have one or more Permissions; A Permission can be assigned to one or more Users.
 
 ## Entity Relationship Diagram
+
+![Entity Relationship Diagram](https://user-images.githubusercontent.com/105037865/233810654-5ded0e5c-0464-4ece-8fcb-4a2dd2a2ed92.jpg)
+
  
 ## Relational Model
 
