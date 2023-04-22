@@ -53,18 +53,18 @@ The relationships between these entities have been identified as follows:
  
 ## Relational Model
 
-*	User (user_id, first_name, last_name, email, is_admin(fk) created_at, updated_at)
-*	Soccer_Team (team_id, user_id(fk), team_name, created_at, updated_at)
-*	Soccer_League (league_id, user_id(fk) league_name, created_at, updated_at)
-*	Jersey (jersey_id, user_id(fk), team_id(fk), image, jersey_description, year, player_name, purchase_link, created_at, updated_at)
-*	Jersey_Review (user_id(fk), jersey_id(fk), review_comment, created_at, updated_at)
-*	Jersey_Rating (user_id(fk), jersey_id(fk), rating_number, created_at, updated_at)
-*	Wish_Item (wish_item_id, user_id(fk), jersey_id(fk), created_at, updated_at)
-*	Login_Info (login_id, user_id(fk), username, password, created_at, updated_at)
-*	Permissions (permission_id, description, created_at, updated_at)
-*	League_Team (league_id(fk), team_id(fk) , created_at, updated_at)
-*	User_Permissions (user_id(fk), bit(fk) , created_at, updated_at)
-*	User_Wish (wish_item_id(fk), user_id(fk) , created_at, updated_at)
+*	User (<ins>user_id</ins>, first_name, last_name, email, is_admin(fk) created_at, updated_at)
+*	Soccer_Team (<ins>team_id</ins>, user_id(fk), team_name, created_at, updated_at)
+*	Soccer_League (<ins>league_id</ins>, user_id(fk) league_name, created_at, updated_at)
+*	Jersey (<ins>jersey_id</ins>, user_id(fk), team_id(fk), image, jersey_description, year, player_name, purchase_link, created_at, updated_at)
+*	Jersey_Review (<ins>user_id(fk), jersey_id(fk)</ins>, review_comment, created_at, updated_at)
+*	Jersey_Rating (<ins>user_id(fk), jersey_id(fk)</ins>, rating_number, created_at, updated_at)
+*	Wish_Item (<ins>wish_item_id</ins>, user_id(fk), jersey_id(fk), created_at, updated_at)
+*	Login_Info (<ins>login_id</ins>, user_id(fk), username, password, created_at, updated_at)
+*	Permissions (<ins>permission_id</ins>, description, created_at, updated_at)
+*	League_Team (<ins>league_id(fk), team_id(fk)</ins> , created_at, updated_at)
+*	User_Permissions (<ins>user_id(fk), permission_id(fk)</ins> , created_at, updated_at)
+*	User_Wish (<ins>wish_item_id(fk), user_id(fk)</ins> , created_at, updated_at)
 
 
 
